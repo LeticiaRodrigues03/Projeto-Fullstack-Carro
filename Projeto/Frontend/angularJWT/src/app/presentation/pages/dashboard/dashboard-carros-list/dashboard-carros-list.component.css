@@ -1,0 +1,25 @@
+.active {
+    background-color: #563881;
+    border-color: #563881;
+}
+
+.lr-titulo {
+    text-align: center;
+}
+
+.lr-class-button {
+    text-align:end;
+    justify-content: end;
+    align-items: end;      
+}
+
+.lr-button {
+    background-color: #563881;
+    color: white;
+    font-weight:500;
+}
+
+.lr-table {
+    align-items: center;
+    text-align: center;
+}

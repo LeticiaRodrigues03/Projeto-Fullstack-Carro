@@ -1,0 +1,27 @@
+.lr-card-header {
+    text-align: center;
+    color: #412a61;
+}
+
+.btn {
+    height: 40px;
+    width: 300px;
+}
+
+.lr-card {
+    justify-content: center;
+}
+
+.lr-corpo {
+    background-color: none;
+}
+
+.lr-div {
+    padding-top: 50px;
+}
+
+.lr-btn {
+    font-weight: bolder;
+    color: white;
+    background-color: #563881;
+}

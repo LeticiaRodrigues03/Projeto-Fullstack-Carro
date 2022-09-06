@@ -1,0 +1,41 @@
+<body class="lr-corpo">
+    <div class="col-md-4 offset-md-4  lr-div">
+        <div class="card lr-card">
+            <h4 class="card-header">
+                <p class="lr-card-header">Cadastrar Carro</p>
+            </h4>
+            <div class="card-body lr-card-body">
+                <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" formControlName="nome"  placeholder="" class="form-control" />
+                        <div class="invalid-feedback">
+                            <div >Nome is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" formControlName="descricao" class="form-control" />
+                        <div  class="invalid-feedback">
+                            <div>Descricao is required</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descricao">Tipo</label>
+                        <input type="text" formControlName="tipo" class="form-control" />
+                        <div  class="invalid-feedback">
+                            <div>Tipo is required</div>
+                        </div>
+                    </div>
+                    <br>
+                    <button class="btn lr-btn">
+                        <span class=""></span>
+                        Cadastrar Carro
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>

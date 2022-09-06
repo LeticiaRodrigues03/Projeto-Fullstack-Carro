@@ -1,0 +1,51 @@
+<body class="lr-corpo">
+    <div class="col-md-4 offset-md-4  lr-div">
+        <div class="card lr-card">
+            <h4 class="card-header">
+                <p class="lr-card-header">Cadastrar</p>
+            </h4>
+            <div class="card-body lr-card-body">
+                <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="username">Nome</label>
+                        <input type="text" formControlName="nome"  placeholder="Nome de usuário" class="form-control" />
+                        <div  class="invalid-feedback">
+                            <div >Username is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Login</label>
+                        <input type="login" formControlName="login" placeholder="Login" class="form-control" />
+                        <div  class="invalid-feedback">
+                            <div >Password is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">E-mail</label>
+                        <input type="e-mail" formControlName="email" placeholder="E-mail" class="form-control" />
+                        <div  class="invalid-feedback">
+                            <div >Password is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input type="password" formControlName="senha" placeholder="Senha" class="form-control" />
+                        <div  class="invalid-feedback">
+                            <div >Password is required</div>
+                        </div>
+                    </div>
+                    <br>
+                    <button class="btn lr-btn">             
+                        Login
+                    </button>
+                    <p class="lr-paragrafo">
+                        Tem uma conta?
+                        <a routerLink="/">
+                            Conecte-se
+                        </a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
